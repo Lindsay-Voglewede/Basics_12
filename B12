@@ -1,0 +1,31 @@
+/*Write a C program to input side of an equilateral triangle from user and find area of the given triangle */
+
+//A=sqrt((3)/4)*pow(a,2);
+//sqrt(number)
+//pow(a,2)
+
+////////////////////////////
+/// By Lindsay Voglewede ///
+////////////////////////////
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{
+    //Declare variables 
+    float side=0;
+    float A=0;
+
+    //As user for Input
+    printf("Enter side measurement\n");
+    scanf("%f",&side);
+
+    //Mathematical equation
+    A=((sqrt(3))/4)*pow(side,2);
+
+    //Output
+    printf("The are of the triagle is: %f",A);
+    return 0;
+}
